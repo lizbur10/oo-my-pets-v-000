@@ -55,9 +55,9 @@ class Owner
   end
 
   def sell_pets
-    self.pets.each do | species |
-      # binding.pry
-        species.map { | pet | pet.mood = "nervous" }
+    self.pets.each do | species, pet_array |
+      pet_array.map { | pet | pet.mood = "nervous" }
+      pet_array.clear
     end
   end
 
