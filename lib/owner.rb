@@ -55,7 +55,6 @@ class Owner
   def sell_pets
     self.pets.each do | types |
       types.map { | pets_of_type, pet | pet.mood = "nervous" }
-      end
     end
   end
 end
