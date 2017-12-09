@@ -6,6 +6,10 @@ class Owner
     @@all
   end
 
+  def self.reset_all
+    @@all.clear
+  end
+
   def initialize(species)
     @species = species
     @pets = {fishes: [], cats: [], dogs: [] }
