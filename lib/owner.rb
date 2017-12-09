@@ -11,7 +11,7 @@ class Owner
   end
 
   def self.count
-    count == self.all.size 
+    count == @@all.size 
   end
 
   def initialize(species)
