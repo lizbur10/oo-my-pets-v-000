@@ -53,7 +53,7 @@ class Owner
   end
 
   def sell_pets
-    self.pets.each do |category| 
+    self.pets.each do |category|
       category.map { | pet | pet.mood = "nervous" }
 
     end
