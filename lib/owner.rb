@@ -65,6 +65,6 @@ class Owner
     self.pets.each do | pet_type, pets_of_type |
       pet_counts[pet_type] = pets_of_type.count
     end
-    "I have #{pet_counts[:fishes]} fish, #{pet_counts[:cats]} cat(s), and #{pet_counts[:dogs]} dog(s)."
+    "I have #{pet_counts[:fishes]} fish, #{pet_counts[:dogs]} dog(s), and #{pet_counts[:cats]} cat(s)."
   end
 end
