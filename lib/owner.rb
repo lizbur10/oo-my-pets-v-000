@@ -54,6 +54,10 @@ class Owner
   end
 
   def sell_pets
-    self.pets.each { | pet_type, pet | pet.mood = "nervous" }
+    self.pets.each do | pet_types |
+      pet_types.each do | pet_type, pets | 
+        pets.each { | pet | pet.mood = "nervous" }
+    end
+    binding.pry
   end
 end
