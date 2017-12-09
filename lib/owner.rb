@@ -56,7 +56,7 @@ class Owner
     self.pets.each do | types |
       types.each do | pets_of_type |
         pets_of_type.map { | pet | pet.mood = "nervous" }
-
+      end
     end
   end
 end
