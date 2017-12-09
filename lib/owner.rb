@@ -54,13 +54,17 @@ class Owner
   end
 
   def sell_pets
-    self.pets.each do | pet_types, pets_of_type |
+    self.pets.each do | pet_type, pets_of_type |
       pets_of_type.each { | pet | pet.mood = "nervous" }
     end
     self.pets.clear
   end
 
   def list_pets
-
+    pet_counts = {}
+    self.pets.each do | pet_type, pets_of_type |
+      pet_counts[pet_type] = pets_of_type.count
+    end
+    "I have #{fishes.count} fish, #{cats.count} cats(s), and #{dogs.count} dog(s)."
   end
 end
